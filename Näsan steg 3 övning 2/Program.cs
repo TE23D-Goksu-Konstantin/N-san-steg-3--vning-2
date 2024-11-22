@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Reflection.Metadata;
+class Senap{
 
-class Program
-{
-
-    static void MinMetod(string namn, int år)
+static int myMethod(int a)
     {
-        Console.WriteLine(namn + " är " + år + " gammal");        
+    return a * 5;
     }
 
-    static void Main(string[] args)
+static void Main(string[] args)
     {
-    MinMetod("Erland", 24);
-    MinMetod("Bertil", 65);
-    MinMetod("Urban", 89);
+    Console.WriteLine(myMethod(4));
+    
     Console.ReadLine();
     }
+
 
 }
